@@ -1,103 +1,167 @@
-import Image from "next/image";
+import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
+import { Github, Globe, Instagram, Linkedin, Mail, Twitter } from "lucide-react"
+import Image from "next/image"
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+    <main className="min-h-screen bg-background">
+      <div className="container mx-auto px-4 py-12 max-w-3xl">
+        {/* Hero Section */}
+        <section className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 mb-12">
+          <div>
+            <h1 className="text-4xl md:text-5xl font-bold mb-2">
+              Hi, I&apos;m Dzaki
+              <span className="ml-2 inline-block animate-wave">👋</span>
+            </h1>
+            <p className="text-xl text-muted-foreground">Fullstack Developer</p>
+          </div>
+          {/* <div className="shrink-0">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src="/profile.png"
+              alt="Profile picture"
+              width={80}
+              height={80}
+              className="rounded-full"
+              priority
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+          </div> */}
+        </section>
+
+        {/* About Section */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold mb-4">About</h2>
+          <p className="text-muted-foreground">
+            I&apos;m a fullstack developer based in Indonesia. I love building
+            things that make people happy and help them solve their problems.
+            I&apos;m passionate about web technologies and always eager to learn
+            new things.
+          </p>
+        </section>
+
+        {/* Blog Section */}
+        <section className="mb-12">
+          <div className="flex items-center justify-center mb-4">
+            <Badge className="rounded-full px-4 py-1">Blog</Badge>
+          </div>
+          <h2 className="text-4xl font-bold text-center mb-2">
+            Check out my latest blog posts
+          </h2>
+          <p className="text-center text-muted-foreground mb-8">
+            I write about my experiences, thoughts, and things I learn
+          </p>
+        </section>
+
+        {/* Projects Section */}
+        <section className="mb-12">
+          <div className="flex items-center justify-center mb-4">
+            <Badge className="rounded-full px-4 py-1">
+              My Personal Projects
+            </Badge>
+          </div>
+          <h2 className="text-4xl font-bold text-center mb-2">
+            Check out my latest personal work
+          </h2>
+          <p className="text-center text-muted-foreground mb-8">
+            I build things that make me happy and help me learn new things
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <Card>
+              <CardHeader className="p-0">
+                {/* <Image
+                  src="/project-2.png"
+                  alt="Project screenshot"
+                  width={600}
+                  height={300}
+                  className="rounded-t-lg object-cover w-full h-48"
+                /> */}
+              </CardHeader>
+              <CardContent className="px-4">
+                <h3 className="font-bold text-lg mb-1">Portfolio Website</h3>
+                <p className="text-sm text-muted-foreground mb-2">March 2024</p>
+                <p className="text-sm text-muted-foreground mb-4">
+                  A personal portfolio website built with Next.js and shadcn/ui
+                  to showcase my projects and skills.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <Badge variant="outline">Next.js</Badge>
+                  <Badge variant="outline">TypeScript</Badge>
+                  <Badge variant="outline">Tailwind CSS</Badge>
+                  <Badge variant="outline">shadcn/ui</Badge>
+                </div>
+              </CardContent>
+              <CardFooter className="px-4 pt-0 flex gap-2">
+                <Button
+                  size="sm"
+                  variant="outline"
+                  className="flex items-center gap-1"
+                >
+                  <Globe className="h-4 w-4" />
+                  Website
+                </Button>
+                <Button
+                  size="sm"
+                  variant="outline"
+                  className="flex items-center"
+                >
+                  <Github className="h-4 w-4" />
+                  Source
+                </Button>
+              </CardFooter>
+            </Card>
+          </div>
+        </section>
+
+        {/* Contact Section */}
+        <section className="mb-12">
+          <div className="flex items-center justify-center mb-4">
+            <Badge className="rounded-full px-4 py-1">Contact</Badge>
+          </div>
+          <h2 className="text-4xl font-bold text-center mb-4">Get in Touch</h2>
+          <p className="text-center text-muted-foreground mb-8">
+            Want to chat? Just shoot me a dm
+          </p>
+          <div className="flex justify-center gap-4">
+            <Button
+              size="icon"
+              variant="outline"
+              aria-label="Email"
+            >
+              <Mail className="h-5 w-5" />
+            </Button>
+            <Button
+              size="icon"
+              variant="outline"
+              aria-label="Twitter"
+            >
+              <Twitter className="h-5 w-5" />
+            </Button>
+            <Button
+              size="icon"
+              variant="outline"
+              aria-label="GitHub"
+            >
+              <Github className="h-5 w-5" />
+            </Button>
+            <Button
+              size="icon"
+              variant="outline"
+              aria-label="LinkedIn"
+            >
+              <Linkedin className="h-5 w-5" />
+            </Button>
+            <Button
+              size="icon"
+              variant="outline"
+              aria-label="Instagram"
+            >
+              <Instagram className="h-5 w-5" />
+            </Button>
+          </div>
+        </section>
+      </div>
+    </main>
+  )
 }
