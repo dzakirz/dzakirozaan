@@ -14,7 +14,7 @@ export default function Home() {
         height={100}
         priority
       />
-      <h1 className="text-lg md:text:xl text-zinc-700 font-bold mt-2">Sorry</h1>
+      <h1 className="text-lg md:text:xl text-zinc-700 font-bold mt-2">Ups, Sorry...</h1>
       <p className="text-sm md:tex-base text-zinc-500 text-center">
         This website is still under development, please come back later. Thank
         you !
@@ -24,7 +24,7 @@ export default function Home() {
         href="https://wa.me/6283154641298"
         target="_blank"
       >
-        contact me
+        button
       </a>
     </main>
   )
