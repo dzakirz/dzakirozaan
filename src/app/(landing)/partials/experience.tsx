@@ -9,7 +9,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import SectionHeading from "./section-heading";
+import SectionHeading from "../../../components/section-heading";
 
 export default function Experience() {
   const { ref } = useSectionInView("Experience");

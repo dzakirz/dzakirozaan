@@ -4,8 +4,8 @@ import { sendEmail } from "@/actions/sendEmail";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 import toast from "react-hot-toast";
-import SectionHeading from "./section-heading";
-import SubmitBtn from "./submit-btn";
+import SectionHeading from "../../../components/section-heading";
+import SubmitBtn from "../../../components/submit-btn";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
