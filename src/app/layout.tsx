@@ -12,7 +12,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Dzaki Rozaan | Personal Portfolio",
+  title: "Dzaki Rozaan",
   description:
     "Dzaki Rozaan is a full-stack developer with 1 years of experience.",
 };
