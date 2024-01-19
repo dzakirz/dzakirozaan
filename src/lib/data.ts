@@ -66,9 +66,9 @@ export const projectsData = [
     imageUrl: digitalentImg,
   },
   {
-    title: "Digitalent",
+    title: "Diploy",
     description:
-      "Contribute PT. Javan Cipta Solusi Team's to build a web app for their client. It's a web app to manage and monitor the company's assets",
+      "Contribute PT. Javan Cipta Solusi Team's to build a web app for their client. It's a web app to help people to find a job.",
     tags: ["Laravel", "Livewire"],
     imageUrl: diployImg,
   },
