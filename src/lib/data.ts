@@ -38,7 +38,7 @@ export const experiencesData = [
     description:
       "I worked as a full-stack developer intern for 3 months. I built a web app for a client using Laravel.",
     icon: React.createElement(CgWorkAlt),
-    date: "2021-2022",
+    date: "Dec 2021 - Sept 2022",
   },
   {
     title: "Front-End Developer at PT. Javan Cipta Solusi",
@@ -46,7 +46,7 @@ export const experiencesData = [
     description:
       "I worked as a front-end developer for 6 months. I built a web app for a client using React and TypeScript.",
     icon: React.createElement(CgWorkAlt),
-    date: "2023 - 2024",
+    date: "Aug 2023 - Sept 2023",
   },
 ] as const;
 
