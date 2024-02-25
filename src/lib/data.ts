@@ -46,7 +46,7 @@ export const experiencesData = [
     description:
       "I worked as a front-end developer for 6 months. I built a web app for a client using React and TypeScript.",
     icon: React.createElement(CgWorkAlt),
-    date: "Aug 2023 - Sept 2023",
+    date: "Aug 2023 - Oct 2023",
   },
 ] as const;
 
