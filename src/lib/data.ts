@@ -38,7 +38,7 @@ export const experiencesData = [
     description:
       "I worked as a full-stack developer intern for 3 months. I built a web app for a client using Laravel.",
     icon: React.createElement(CgWorkAlt),
-    date: "Dec 2021 - Sept 2022",
+    date: "Dec 2021 - Feb 2022",
   },
   {
     title: "Front-End Developer at PT. Javan Cipta Solusi",
