@@ -9,13 +9,20 @@ import Skills from "@/app/(landing)/partials/skills";
 export default function Home() {
   return (
     <main className="flex flex-col items-center px-4">
-      <Intro />
+      {/* maintenance design */}
+      <div className="h-[70vh] w-full flex flex-col justify-center items-center">
+        <h1 className="text-4xl font-bold text-center">
+          This site is under maintenance
+        </h1>
+        <p className="text-lg text-center mt-4">Please come back later</p>
+      </div>
+      {/* <Intro />
       <SectionDivider />
       <About />
       <Projects />
       <Skills />
       <Experience />
-      <Contact />
+      <Contact /> */}
     </main>
   );
 }
